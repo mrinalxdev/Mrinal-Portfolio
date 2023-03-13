@@ -1,9 +1,10 @@
 import React from 'react'
+import { Form } from './Form'
 
 const CreatePost = () => {
   return (
     <div>
-        <h1>Create Post</h1>
+        <Form />
     </div>
   )
 }

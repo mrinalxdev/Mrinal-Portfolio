@@ -14,13 +14,14 @@ const Navbar = () => {
  
 
   return (
-    <div>
-      <Link to="/"> Home </Link>
-      {!user ? (
-      <Link to="/login">Login</Link>
-      ) : (
-      <Link to="/createpost">Create Post</Link>
-      )}
+    <div className="bg-black text-white p-5 mb-4">
+      <div className="flex justify-evenly items-center">
+        <Link to="/"> Home </Link>
+        {!user ? (
+        <Link to="/login">Login</Link>
+        ) : (
+        <Link to="/createpost">Create Post</Link>
+        )}
 
       {user && (
         <>
@@ -31,6 +32,7 @@ const Navbar = () => {
           <button onClick={signUserOut}>Logout</button>
         </>
       )}
+      </div>
     </div>
   )
 }
