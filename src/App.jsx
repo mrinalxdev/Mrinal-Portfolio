@@ -1,10 +1,13 @@
-import { useState } from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
+import { RouterProvider } from 'react-router-dom'
 
 
 function App() {
 
   return (
-    <h1 className="text-2xl">Hello World!</h1>
+    <ChakraProvider>
+      <RouterProvider router={router} />
+    </ChakraProvider>
   )
 }
 
