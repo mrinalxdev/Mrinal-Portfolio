@@ -2,10 +2,9 @@ import { useState } from 'react'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    null
+    <h1 className="text-2xl">Hello World!</h1>
   )
 }
 
