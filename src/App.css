@@ -150,12 +150,14 @@ span.navbar-text {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
-  padding: 18px 34px;
+  padding: 12px 24px;
   font-size: 18px;
   margin-left: 18px;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .navbar-text button span {
   z-index: 1;
