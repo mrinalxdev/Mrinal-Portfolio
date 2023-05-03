@@ -2,7 +2,7 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
-import deved from '../../public/dev-ed-wave.png'
+import me from '../../public/me.jpeg'
 
 
 export default function Home() {
@@ -46,7 +46,7 @@ export default function Home() {
             <AiFillGithub className="cursor-pointer duration-100 ease-in-out hover:text-black" />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
-            <Image src={deved} layout="fill" ocjectFit="cover" />
+            <Image src={me} layout="fill" ocjectFit="cover" />
           </div>
         </section>
       </main>
