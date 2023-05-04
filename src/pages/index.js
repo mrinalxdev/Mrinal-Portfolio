@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -15,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Mrinal Portfolio</title>
       </Head>
-      <main className="px-10 ">
+      <main className="px-10">
         <section className="min-h-screen mb-8">
           {/* Navbar  */}
           <nav className="py-10 mb-12 flex justify-between">
@@ -33,7 +32,7 @@ export default function Home() {
           </nav>
           {/* Main Banner Section */}
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-white">Mrinal Pramanick</h2>
+            <h2 className="text-7xl py-2 text-white font-notosans">Mrinal Pramanick</h2>
             <h3 className="text-2xl py-2 text-cyan-400">
               Developer and photographer.
             </h3>
