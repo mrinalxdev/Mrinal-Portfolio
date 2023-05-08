@@ -22,10 +22,10 @@ export default function Home() {
             <ul className="flex items-center">
               <li>
                 <a
-                  href="#"
+                  href="https://link-tree-mrinalxdev.vercel.app/"
                   className="bg-gradient-to-r from-cyan-500 to-teal-500  text-white px-6 py-2 rounded-md ml-8 "
                 >
-                  Resume
+                  Projects List
                 </a>
               </li>
             </ul>
