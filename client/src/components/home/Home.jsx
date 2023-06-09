@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import "./Home.css";
 
 const Home = () => {
@@ -16,22 +17,26 @@ const Home = () => {
       canvas,
     });
 
-    const geometery = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const moonGeometery = new THREE.SphereGeometry(3, 64, 64);
+    const moonMaterial = new THREE.MeshStandardMaterial({ color: 0xffffffff });
 
-    const mesh = new THREE.Mesh(geometery, material);
+    const pointLight = new THREE.PointLight(0xfffffff, 1);
+    pointLight.position.z = 10;
 
-    scene.add(mesh);
+    const moon = new THREE.Mesh(moonGeometery, moonMaterial);
 
-    camera.position.z = 5;
+    const controls = new OrbitControls(camera, renderer.domElement)
+    scene.add(moon);
+    scene.add(pointLight);
+
+    camera.position.z = 10;
     const animate = () => {
-      requestAnimationFrame(animation)
+      requestAnimationFrame(animate);
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.render(scene, camera);
-    }
+    };
 
-    animate()
-
+    animate();
   }, []);
 
   return (
