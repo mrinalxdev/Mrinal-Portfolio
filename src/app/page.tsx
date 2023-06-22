@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Navbar from "./components/Navbar";
+import SocialButtons from "./components/SocialButtons";
 
 export default function Home() {
   return (
@@ -19,12 +19,15 @@ export default function Home() {
             I bring a wealth of knowledge and experience to every project.{" "}
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
-            <button className="text-white bg-[#0A2239] font-medium py-3 px-12 rounded-full">Contact Me</button>
-            <div>{/* Social Links */}</div>
+            <button className="text-white duration-100 transition-all bg-[#0A2239] font-medium py-3 px-12 rounded-full hover:border border-2 hover:border-[#0A2239] hover:bg-transparent hover:text-black">Contact Me</button>
+            <div className="flex items-center gap-4">
+              <SocialButtons />
+              <SocialButtons />
+            </div>
           </div>
         </div>
 
-        <div />
+        <div className="h-[30rem] rounded-3xl p-8 bg-[url('../../public/profile.png')] bg-cover bg-no-repeat bg-center" />
       </section>
     </>
   );
