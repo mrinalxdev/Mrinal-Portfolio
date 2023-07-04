@@ -59,7 +59,7 @@ const Hero = () => {
         <div className="flex md:flex-row flex-col justify-between w-full pt-16">
           <div className="w-[330px] ">
             <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              Demonstrating a string ability to collaborate with
+              Demonstrating a strong ability to collaborate with
               cross-functional teams, communicate effectively, and deliver
               high-quality code within deadlines.
             </p>
