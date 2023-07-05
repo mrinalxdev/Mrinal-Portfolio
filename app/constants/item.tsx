@@ -5,8 +5,8 @@ export const NavLinks = [
 
     },
     {
-        name: "Projects",
-        path: '/projects',
+        name: "Works",
+        path: '/works',
 
     },
     {
