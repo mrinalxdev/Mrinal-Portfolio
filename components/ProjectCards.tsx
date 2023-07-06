@@ -1,5 +1,4 @@
 'use client'
-
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
@@ -7,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 
-interface WorkCardsProps {
+interface ProjectCardsProps {
     image: string,
     ImgTitle: string,
     name: string,
@@ -16,7 +15,7 @@ interface WorkCardsProps {
     onVisit: () => any
 }
 
-const WorkCards = ({ image, ImgTitle, name, description, onView, onVisit }: WorkCardsProps) => {
+const ProjectCards = ({image , ImgTitle, name, description, onView, onVisit}: ProjectCardsProps) => {
     return (
         <Card sx={{ maxWidth: 345 }} className='h-[400px]'>
             <CardMedia
@@ -41,4 +40,4 @@ const WorkCards = ({ image, ImgTitle, name, description, onView, onVisit }: Work
     )
 }
 
-export default WorkCards
+export default ProjectCards
