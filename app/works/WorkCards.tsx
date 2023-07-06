@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from 'react'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
@@ -13,12 +12,13 @@ interface WorkCardsProps {
     ImgTitle: string,
     name: string,
     description: string,
-    onClick: () => any,
+    onView: () => any,
+    onVisit: () => any
 }
 
-const WorkCards = ({ image, ImgTitle, name, description, onClick }: WorkCardsProps) => {
+const WorkCards = ({ image, ImgTitle, name, description, onView, onVisit }: WorkCardsProps) => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345 }} className='h-[400px]'>
             <CardMedia
                 component="img"
                 title={ImgTitle}
@@ -34,8 +34,8 @@ const WorkCards = ({ image, ImgTitle, name, description, onClick }: WorkCardsPro
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button onClick={onClick} size="small">View Project</Button>
-                <Button onClick={onClick} size="small">Visit Code</Button>
+                <Button onClick={onView} size="small">View Project</Button>
+                <Button onClick={onVisit} size="small">Visit Code</Button>
             </CardActions>
         </Card>
     )
